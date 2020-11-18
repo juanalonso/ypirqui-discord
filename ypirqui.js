@@ -1,4 +1,4 @@
-console.log("¡Estoy despierta! 👧🏻");
+console.log("👧🏻: ¡Estoy despierta!");
 
 const config = require('./config.js');
 const Discord = require('discord.js');
@@ -10,7 +10,7 @@ client.on('ready', readyDiscord);
 client.on('message', gotMessage);
 
 function readyDiscord() {
-    console.log('¡Estoy conectada! 👧🏻');
+    console.log('👧🏻: ¡Estoy conectada!');
 }
 
 function gotMessage(msg) {
@@ -29,5 +29,6 @@ function gotMessage(msg) {
             bot_response += 'ñi';
         }
         msg.reply(bot_response);
+        console.log('👧🏻: me han hablado');
     }
 }
